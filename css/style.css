@@ -2179,6 +2179,12 @@ margin-left: 2px;
     border: 1px solid #e8e7e7;
 }
 
+@media (max-width: 500px) {
+   .image-mini-slider_container {
+      display: none;
+   }
+}
+
 .image-mini-slider__wrapper {
     margin: 0px 0px 0px 0px;
 
@@ -2681,6 +2687,353 @@ margin-left: 2px;
    .infrastructure__column {
       flex: 0 0 50%;
    }
+}
+
+/* Estate info config styles */
+
+.estate__config {
+   
+}
+
+.estate__config_row {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.estate__config_column {
+   flex: 0 0 33.333%;
+   padding: 5px;
+}
+
+.estate__config_body {
+   border: 1px dotted grey;
+   text-align: center;
+   padding: 10px 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 16px;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: all 0.2s ease 0s;
+}
+
+.estate__config_body:hover {
+   background-color: #ffed8e;
+}
+
+.icon-infr4 {
+   fill: #0076ff;
+}
+
+.icon-infr5 {
+   fill: #6bb0ff;
+}
+
+@media (max-width: 450px) {
+   .estate__config_column {
+      flex: 0 0 50%;
+   }
+}
+
+/*  Ads Report Styles */
+
+.ads_report_items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-top: 1px solid #d1d1d1;
+    border-bottom: 1px solid #d1d1d1;
+    margin: 20px 20px;
+    padding: 20px 0 5px;
+    font-size: 16px;
+
+}
+
+.ads_report_item {
+    width: 33.33333%;
+    margin-bottom: 15px;
+   cursor: pointer;
+}
+
+.ads_report_item label {
+   cursor: pointer;
+}
+
+@media (max-width: 520px) {
+   .ads_report_item {
+      width: 50%;
+   }
+}
+
+.ads_delate_items {
+/*    display: none;*/
+/*    border-top: 1px solid #d1d1d1;*/
+    border-bottom: 1px solid #d1d1d1;
+    margin: 20px 10px 0;
+/*    padding: 20px 0 5px;*/
+    font-size: 16px;
+}
+
+.ads_delate_title {
+    text-align: center;
+    padding: 7px;
+    background-color: #7b9b33;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.ads_delate_text {
+    padding: 15px 15px 5px;
+}
+
+.ads_delate_input_part {
+    margin: 10px;
+}
+
+.ads_delate_input {
+    align-items: baseline;
+    padding: 10px;
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+    outline: none;
+}
+
+.ads_delate_btn {
+    padding: 8px 15px;
+    border-radius: 5px;
+    background-color: #6d8b2d;
+/*    border: 1px solid #6d8b2d;*/
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    align-items: baseline;
+   transition: all 0.2s ease 0s;
+}
+
+.ads_delate_btn:hover {
+    background-color: #ff0000;
+    cursor: pointer;
+}
+
+.ads_delate_btn:focus {
+    border: 1px solid #de0202;
+    outline: 0;
+    background-color: #e00000;
+}
+
+.ads_delate_psw_lost {
+    margin: 10px 7px;
+    font-size: 14px;
+    color: #00b5ff;
+}
+
+.ads_edit_items {
+/*    border-top: 1px solid #d1d1d1;*/
+    border-bottom: 1px solid #d1d1d1;
+    margin: 20px 10px 0;
+/*    padding: 20px 0 5px;*/
+    font-size: 16px;
+}
+
+.car_about_share {
+    margin: 10px auto;
+    width: 90%;
+    text-align: center;
+}
+
+.car_about_share_link {
+   margin: 0 5px;
+    text-decoration: none;
+}
+
+.car_about_share_icon {
+    max-width: 30px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+
+/*  Password Reset Styles */
+
+.psw_reset_input {
+    display: block;
+    width: 50%;
+    align-items: center;
+    align-content: center;
+    margin: 2px auto;
+    text-align: center;
+    color: #6d6d6d;
+    background-color: white;
+    border: 1px solid #e5e5e5;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+}
+
+.psw_reset_btn {
+    display: block;
+    margin: 10px auto;
+    padding: 7px 30px;
+    border-radius: 5px;
+    background-color: #ff1818;
+    background-color: #ff3838;
+    border: 1px solid white;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    align-items: baseline;
+    text-align: center;
+}
+
+.psw_reset_btn:hover {
+    background-color: #ff0000;
+    cursor: pointer;
+}
+
+.psw_reset_btn:focus {
+    border: 1px solid #ffffff;
+    outline: 0;
+    background-color: #ed0000;
+}
+
+.mail_notification {
+    display: block;
+    margin: -20px auto 10px;
+    padding: 0px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: red;
+    align-items: baseline;
+    text-align: center;
+}
+
+/* Share styles estate */
+
+.estate__share {
+   margin: 20px 0px;
+}
+
+.estate__share_row {
+   display: flex;
+   justify-content: center;
+}
+
+.icon-vip_title1 {
+   fill: #0062ff;
+   width: 24px;
+   height: 24px;
+   margin: 0px 5px;
+   margin-bottom: -2px;
+}
+
+/* Smm Styles    */
+
+.column-left__smm {
+   display: block;
+   border-radius: 10px;
+   margin: 10px 10px 20px;
+   position: relative;
+   height: 250px;
+   overflow: hidden;
+   padding: 10px;
+}
+
+.smm__image {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   z-index: 1;
+   top: 0;
+   left: 0;
+}
+
+.smm__image img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.smm__blok {
+   position: relative;
+   z-index: 2;
+   color: white;
+   font-weight: 700;
+   padding: 5px;
+   text-align: center;
+   font-size: 18px;
+   text-transform: uppercase;
+   border: 1px dotted white;
+   border-radius: 10px;
+   height: 100%;
+   transition: all 0.3s ease 0s;
+}
+
+.smm__title {
+padding: 5px 10px;
+   margin-bottom: 20px;
+   font-size: 26px;
+   background-color: rgba(255, 69, 0, 0.74);
+   display: inline-block;
+}
+
+.smm__title1 {
+padding: 5px 10px;
+   margin-bottom: 20px;
+   font-size: 21px;
+   background-color: rgba(73, 119, 0, 0.74);
+   display: inline-block;
+}
+
+.smm__title2 {
+padding: 5px 10px;
+   margin-bottom: 20px;
+   font-size: 20px;
+   background-color: rgba(255, 0, 0, 0.74);
+   display: inline-block;
+}
+
+.smm__subtitle {
+   margin-bottom: 15px;
+   transition: all 0.3s ease 0s;
+   display: inline-block;
+   background-color: rgba(65, 63, 62, 0.58);
+   padding: 5px 5px;
+   line-height: 28px;
+   font-size: 16px;
+}
+
+.smm__logo {
+}
+
+.icon-smm {
+   width: 60px;
+   height: 60px;
+   fill: currentColor;
+   transition: all 0.2s ease 0s;
+}
+
+.column-left__smm:hover .smm__subtitle {
+   color: rgb(255, 215, 0);
+}
+
+.column-left__smm:hover .icon-smm {
+   color: gold;
+}
+
+.column-left__smm:hover .icon_y {
+   color: rgba(255, 0, 0, 0.9);
+}
+
+@media (max-width: 450px) {
+   .column-left__smm {
+   
+   margin: 10px 0px 20px;
+}
 }
 
 /*  Footer Styles */
