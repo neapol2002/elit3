@@ -1127,7 +1127,7 @@ f
 .top-banners__title {
    position: absolute;
    top: 50px;
-   text-transform: uppercase;
+/*   text-transform: uppercase;*/
    font-weight: 700;
    font-size: 26px;
    text-align: center;
@@ -1135,6 +1135,16 @@ f
    line-height: 40px;
    background-color: rgba(0, 0, 0, 0.46);
    padding: 0px 20px;
+   overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+@media (max-width: 500px) {
+   .top-banners__title {
+      font-size: 22px;
+   }
 }
 
 .top-banners {
@@ -1507,7 +1517,7 @@ f
    .section_header__more {
       font-size: 14px;
    }
-   .icon-vip_title {
+   .icon-vip_title1 {
       width: 15px;
    height: 15px;
    }
@@ -2275,7 +2285,7 @@ margin-left: 2px;
 
 .table4 {
     /*    border: 1px solid #757575;*/
-    margin: 40px 0px;
+    margin: 20px 0px;
     width: 100%;
     border-collapse: collapse;
 }
