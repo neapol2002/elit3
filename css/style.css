@@ -963,16 +963,16 @@ body.lock {
 .business-type__inner {
    display: flex;
    padding: 5px 5px 0px;
-   margin-left: 0px;
+   margin-left: 5px;
 }
 
 
 .business-type__tab {
    padding: 10px 20px;
    font-size: 16px;
-   
    border-radius: 5px 5px 0px 0px;
-   margin: 0px 5px;
+/*   margin: 0px 5px;*/
+   background: rgba(41, 20, 4, 0.71);
 }
 
 .business-type__tab._active {
@@ -2564,6 +2564,12 @@ margin-left: 2px;
    }
 }
 
+@media (max-width: 750px) {
+   .row_phone_number {
+      font-size: 18px;
+   }
+}
+
 .file_tree {
     /*    background-color: #e0dcdc;*/
     font-family: 'Roboto', sans-serif;
@@ -2687,13 +2693,13 @@ margin-left: 2px;
    padding: 10px 20px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 950px) {
    .infrastructure__column {
       flex: 0 0 33.333%;
    }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
    .infrastructure__column {
       flex: 0 0 50%;
    }
@@ -3045,6 +3051,184 @@ padding: 5px 10px;
    margin: 10px 0px 20px;
 }
 }
+
+/*  Login & Reqister Styles  */
+
+.login_title {
+    text-align: center;
+    color: #016e83;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: 900;
+    text-transform: uppercase;
+
+}
+
+.login_body {
+    margin: 10px auto 40px;
+    padding: 10px 10px 10px;
+    position: relative;
+    max-width: 400px;
+    width: 95%;
+/*    background-color: #0098cb;*/
+   background-color: #89a884;
+   background-color: cornflowerblue;
+   background-color: #34a6bc;
+    border-radius: 9px;
+}
+
+.login_mistake {
+    width: 70%;
+/*    position: absolute;*/
+    top -50px;
+/*    left: -20px;*/
+    border: 1px solid white;
+    padding: 5px;
+    margin: 10px auto;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+/*    display: none;*/
+    opacity: 0;
+}
+
+.type_user {
+    margin: 10px auto 10px;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+}
+
+.simple_user,
+.biznes_user {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 0 5px;
+}
+
+.user_p {
+    color: #e2e2e2;
+}
+
+.user_reqister_label {
+    color: white;
+    padding: 0px 33px;
+}
+
+.user_reqister_label::after {
+    content: "*";
+    color: white;
+    padding: 0px 2px;
+    vertical-align:top;
+/*    vertical-align: super;*/
+}
+
+.login_email {
+    display: block;
+    width: 85%;
+    margin: 1px auto 15px;
+    padding: 15px 10px;
+    border: 1px solid #d0d0d0;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    color: #777;
+    font-size: 14px;
+    background-color: white;
+    border-radius: 4px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+.login_email::placeholder {
+
+    color: #cbcbcb;
+
+}
+.business_type {
+    margin: 10px 10px 10px 10px;
+    width: 45%;
+    border: 1px solid #a8a8a8;
+/*    width: 230px;*/
+    font-family: 'Roboto', sans-serif;
+/*    font-size: 18px;*/
+    color: #777;
+    font-size: 14px;
+/*    padding: 5px 0px;*/
+    padding: 9px 3px 9px 3px;
+    background-color: white;
+    border-radius: 4px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+.login_psw_lost {
+    display: block;
+    margin: -12px 30px 20px 0px;
+    text-align: right;
+    color: white;
+   text-decoration: underline;
+}
+
+.user_rule {
+/*    display: block;*/
+/*    margin: -7px 30px 20px 0px;*/
+    text-align: right;
+    color: #e5e500;
+/*    text-decoration: none;*/
+}
+
+.login_new_user {
+    display: block;
+    margin: 20px 0px 10px 0px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+.user_rule_ok {
+    text-align: end;
+/*    margin-bottom: 20px;*/
+    margin: -9px 30px 20px 0px;
+    color: white;
+}
+
+.login_new_user span {
+    color: yellow;
+    font-weight: 700;
+/*    font-size: 16px;*/
+    text-decoration: underline;
+}
+
+.user_rules_checkbox {
+
+}
+
+.number_check_btn {
+    display: block;
+/*    width: 40%;*/
+    padding: 11px 25px;
+    background-color: #ffd102;
+    border: 1px solid #ffd102;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    border-radius: 7px;
+    font-size: 16px;
+    outline: none;
+   cursor: pointer;
+   transition: all 0.2s ease 0s;
+}
+
+.number_check_btn:hover {
+   background-color: #ebc000;
+} 
 
 /*  Footer Styles */
 
