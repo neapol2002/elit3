@@ -1676,7 +1676,7 @@ f
    display: flex;
    position: absolute;
    right: 3px;
-   bottom: 10px;
+   bottom: 5px;
 }
 
 .premium__icon_content {
@@ -4376,6 +4376,11 @@ outline: none;
     transition: background .1s linear;
 }
 
+.btn_submit:hover {
+   background-color: #e60000;
+   box-shadow: 0px 0px 1px 1px rgba(237, 0, 0, 0.52);
+}
+
 @media (max-width: 960px) {
    .marka_model_add {
         flex-direction: column;
@@ -4553,6 +4558,362 @@ input:checked + .switcher_slider:before {
 }
 
 
+/* Agency info page Styles */
+
+.agency__info {
+}
+.agency__info_container {
+}
+._container {
+}
+.agency__info_row {
+   display: flex;
+   margin: 5px 20px;
+   justify-content: space-between;
+   flex-wrap: wrap;
+/*   border-bottom: 1px dashed green;*/
+/*   padding-bottom: 10px;*/
+   
+}
+.agency__info_column {
+   flex: 1 1 33.333%;
+   padding: 5px;   
+}
+
+.agency__info_body {
+   display: flex;
+   padding: 7px 5px;
+   justify-content: center;
+   align-items: center;
+   border: 1px dotted green;
+   border-radius: 10px;
+   height: 100%;
+}
+.agency__info_icon {
+}
+
+.icon-location3 {
+   width: 25px;
+   height: 25px;
+   fill: #ffd700;
+   margin: 0px 10px;
+}
+.agency__info_about {
+}
+.agency__info_text {
+   font-size: 15px;
+   font-weight: 500;
+}
+
+@media (max-width: 900px) {
+   .agency__info_column {
+   flex: 1 1 50%;
+   padding: 5px;   
+}
+}
+
+@media (max-width: 700px) {
+   .agency__info_row {
+      margin: 5px 10px;
+   }
+}
+
+@media (max-width: 500px) {
+   .agency__info {
+      margin-bottom: 20px;
+   }
+   .agency__info_column {
+   flex: 1 1 100%;
+   padding: 5px;   
+}
+}
+
+
+/*  Agency tabs styles */
+
+.agency__tabs {
+   
+/*   background-color: #f8ffe7;*/
+   margin-bottom: 10px;
+}
+
+.agency__tabs_container {
+   
+}
+._container {
+}
+.agency__tabs_row {
+   display: flex;
+   margin: 0px 20px 0px;
+/*   border-top: 1px dashed green;*/
+/*   border-bottom: 1px dashed green;*/
+   background-color: #f1ffce;
+   padding: 5px 5px;
+   white-space: nowrap;
+   border-radius: 10px;
+   overflow-x: auto;
+}
+.agency__tabs_item {
+   cursor: pointer;
+   padding: 5px;
+   
+}
+
+
+
+.agency__tab_body {
+   background-color: #86b225;
+   color: white;
+   border-radius: 7px;
+   padding: 7px 15px;
+   transition: all 0.3s ease 0s;
+}
+
+.tab_body_active {
+   color: yellow;
+/*   text-decoration: underline;*/
+}
+
+.agency__tabs_item:hover .agency__tab_body {
+   color: yellow;
+   background-color: #7ba226;
+}
+
+@media (max-width: 700px) {
+   .agency__tabs_row {
+   margin: 0px 10px 0px;
+}
+}
+
+@media (max-width: 500px) {
+   .agency__tabs {
+      margin-top: 10px;
+   }
+}
+
+
+/* Agency backfeed styles */
+
+
+.agency_backfeed {
+   margin-bottom: 10px;
+}
+.agency__backfeed_container {
+}
+
+.agency__backfeed_row {
+   display: flex;
+}
+.agency__backfeed_item {
+   padding: 5px 0px;
+   flex: 0 1 25%;
+}
+
+.agency__backfeed_body {
+   display: flex;
+   padding: 10px 5px;
+   justify-content: center;
+   align-items: center;
+   border: 1px dotted green;
+   cursor: pointer;
+   transition: all 0.2s ease 0s;
+}
+
+.agency__backfeed_body:hover {
+   background-color: #f0ffcc;
+}
+
+@media (max-width: 700px) {
+   .agency__backfeed_row {
+   flex-wrap: wrap;
+}
+   .agency__backfeed_item {
+   padding: 5px 0px;
+   flex: 0 1 50%;
+}
+}
+
+/* Agency report styles */
+
+.agency__report {
+   margin-bottom: 20px;
+}
+.agency__report_container {
+}
+
+.agency__report_row {
+/*
+   border-bottom: 1px dashed green;
+   border-top: 1px dashed green;
+*/
+   display: flex;
+   justify-content: center;
+   margin: 0 auto;
+   flex-wrap: wrap;
+}
+.agency_report_item {
+   flex: 0 1 20%;
+   padding: 0px 20px;
+   background-color: #f0ffcc;
+    padding: 10px 10px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 10px;
+   margin: 5px 5px;
+   
+}
+
+.agency_report_item,
+.agency_report_item input,
+.agency_report_item label {
+   cursor: pointer;
+   transition: all 0.3s ease 0s;
+}
+
+.agency_report_item:hover,
+.agency_report_item input:hover,
+.agency_report_item label:hover {
+   background-color: #dcff87;
+}
+
+.agency_report_item1:not(:last-child) {
+   border-right: 1px dashed #00f000;
+}
+
+.agency_report_item label {
+   padding: 0px 3px;
+}
+
+@media (max-width: 820px) {
+   .agency_report_item {
+   flex: 0 1 30%;
+   }
+}
+
+@media (max-width: 620px) {
+   .agency_report_item {
+   flex: 0 1 47%;
+   }
+}
+
+@media (max-width: 420px) {
+   .agency_report_item {
+   flex: 0 1 48%;
+   padding: 10px 5px;
+   margin: 5px 2px;
+   }
+}
+
+/* Share section styles */
+
+.share__section {
+   margin-bottom: 20px;
+}
+.share__section_container {
+}
+
+.share__section_row {
+   display: flex;
+   justify-content: center;
+}
+.share__section_item {
+   padding: 5px 5px;
+   cursor: pointer;
+}
+
+.share__section_body:hover {
+   box-shadow: 0 17px 34px 0 rgb(44 39 56 / 20%), 0 8px 17px 0 rgb(44 39 56 / 2%);
+}
+.share__section_body {
+   padding: 5px;
+   border-radius: 5px;
+}
+
+.icon-share_sm {
+   
+   width: 30px;
+   height: 30px;
+   margin: 0px 5px;
+   margin-bottom: -2px;
+}
+
+.fa_icon {
+   fill: #0080ff;
+}
+
+.insta_icon {
+   fill: #ff00b1;
+}
+
+.wp_icon {
+   fill: #2da800;
+}
+
+.telegram_icon {
+   fill: #33b0ff;
+}
+
+.agency__banner_name_logo {
+   position: absolute;
+   bottom: -180px;
+   left: 100px;
+   display: flex;
+}
+
+.agency__banner_logo {
+   width: 120px;
+   height: 120px;
+   flex: 0 0 120px;
+   border-radius: 10px;
+   overflow: hidden;
+}
+
+.agency__banner_logo img {
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+}
+
+.agency__banner_name {
+   align-self: flex-end;
+   padding: 7px 30px 7px 15px;
+   font-size: 16px;
+   font-weight: 700;
+   background-color: rgba(0, 0, 0, 0.41);
+}
+
+@media (max-width: 700px) {
+   .agency__banner_name_logo {
+      left: 60px;
+   }
+}
+
+@media (max-width: 550px) {
+   .agency__banner_logo {
+   width: 100px;
+   height: 100px;
+   flex: 0 0 100px;
+   }
+   .agency__banner_name_logo {
+      left: 40px;
+   }
+}
+
+@media (max-width: 470px) {
+   .agency__banner_name_logo {
+      left: 30px;   
+   }
+   .agency__banner_name {
+      padding: 7px 20px 7px 10px;
+   }
+}
+
+@media (max-width: 470px) {
+   .agency__banner_name_logo {
+      left: 20px;
+   }
+}
 
 /*  Footer Styles */
 
