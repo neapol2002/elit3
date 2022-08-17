@@ -883,15 +883,85 @@ body.lock {
    pointer-events: none;
 }
 
+
+
 .filtr__btn {
    display: flex;
    justify-content: center;
    align-items: center;
-   height: 54px;
-/*   margin: -3px 5px 5px;*/
-   margin-bottom: 5px;
+   height: 35px;
     background-color: orangered;
    line-height: 0;
+   width: 140px;
+   text-decoration: none;
+   color: white;
+   font-weight: 700;
+   font-size: 20px;
+   border-radius: 5px;
+   margin: 0px 5px 5px;
+   transition: all 0.3s ease 0s;
+}
+
+.filtr__btn:hover {
+   background-color: #ef4000;
+}
+
+.filtr__btn1 {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 15px;
+/*    background-color: orangered;*/
+   line-height: 0;
+   width: 140px;
+   color: white;
+   font-weight: 500;
+   font-size: 14px;
+   border-radius: 5px;
+   margin: 2px 5px 2px;
+   transition: all 0.3s ease 0s;
+}
+
+.filtr__btn1:hover {
+   color: yellow;
+}
+
+@media (max-width: 900px) {
+   .filter_buttons {
+      display: flex;
+/*      flex-direction: row-reverse;*/
+      
+   }
+   
+   .filtr__btn {
+      height: 45px;
+      margin: 5px 5px 5px;
+   }
+   
+   .filtr__btn1 {
+      height: 45px;
+    background-color: #669300;
+      margin: 5px 5px 5px;
+      font-weight: 500;
+   font-size: 16px;
+/*      width: 120px;*/
+   }
+}
+
+@media (max-width: 420px) {
+   .filtr__btn,
+   .filtr__btn1 {
+      height: 40px;
+      width: 110px;
+   }
+}
+
+.icon_search {
+   fill: white;
+   width: 20px;
+   height: 20px;
+   margin: 0px 5px;
+/*   margin-bottom: -2px;*/
 }
 
 .filtr__btn a{
@@ -920,7 +990,7 @@ body.lock {
 
 @media (max-width: 900px){
    .filtr__section {
-      margin: 150px auto 30px;
+      margin: 105px auto 20px;
       max-width: 700px;
    }
    
@@ -973,10 +1043,16 @@ body.lock {
    border-radius: 5px 5px 0px 0px;
 /*   margin: 0px 5px;*/
    background: rgba(41, 20, 4, 0.71);
+   cursor: pointer;
+   transition: all 0.3s ease 0s;
 }
 
 .business-type__tab._active {
    background-color: rgba(103, 120, 66, 0.87);
+}
+
+.business-type__tab:hover {
+   color: yellow;
 }
 
 /*  burger menyu styles   */
@@ -2973,6 +3049,31 @@ margin-left: 2px;
     border-radius: 5px;
     outline: none;
     font-size: 16px;
+}
+
+.approve_out {
+    display: block;
+    width: 50%;
+   height: 45px;
+    align-items: center;
+    align-content: center;
+    margin: 2px auto;
+    text-align: center;
+    color: #6d6d6d;
+    background-color: white;
+    border: 1px solid #e5e5e5;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+}
+
+.approve_text {
+   text-align: center;
+   font-weight: 700;
+   color: yellow;
+   font-size: 16px;
+   margin: 10px 0px 20px;
 }
 
 .psw_reset_btn {
