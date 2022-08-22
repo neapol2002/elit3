@@ -147,23 +147,39 @@
          <label class="filtr__label" for="">
         <select class="filtr__input" name="" id="" placeholder="Otaq sayı">
            <option class="filtr_select__list"  selected>İstənilən otaq sayı</option>
-           <option class="filtr_select__list">Köhnə tikili</option>
-           <option class="filtr_select__list">Ev / Villa</option>
-           <option class="filtr_select__list">Bağ</option>
-           <option class="filtr_select__list">Ofis</option>
+           <option class="filtr_select__list">1 otaq</option>
+           <option class="filtr_select__list">2 otaq</option>
+           <option class="filtr_select__list">3 otaq</option>
+           <option class="filtr_select__list">4 otaq</option>
+           <option class="filtr_select__list">5 otaq və daha çox</option>
         </select>
         <span class="booking__span filtr__span">Otaq sayı</span>
         <svg class="icon  icon-arrow-down_b"><use xlink:href="symbol-defs.svg#icon-arrow-down"></use></svg>
         </label>
         
+<!--         Sahe m kvadrat start      -->
+<!--
+                <label class="filtr__label" for="">
+        <div class="filtr__input1" name="" id="" placeholder="Qiymət">
+          <div class="filtr_realty__price1">
+          <input class="input_price_end" type="number" name="max_price" placeholder="min" id="pto">
+          <input class="input_price_end" type="number" name="max_price" placeholder="maks" id="pto">
+           </div>
+        </div>
+        <span class="booking__span filtr__span">Sahə, m²</span>
+        </label>
+-->
+        <!--         Sahe m kvadrat end      -->
+        
+        
         <label class="filtr__label" for="">
-        <div class="filtr__input" name="" id="" placeholder="Şəhər">
-          <div class="filtr_realty__price">
-           <span class="realty_price__min">30000</span><span>-</span><span class="realty_price__max">130000</span>
+        <div class="filtr__input1" name="" id="" placeholder="Qiymət">
+          <div class="filtr_realty__price1">
+          <input class="input_price_end" type="number" name="max_price" placeholder="min" id="pto">
+          <input class="input_price_end" type="number" name="max_price" placeholder="maks" id="pto">
            </div>
         </div>
         <span class="booking__span filtr__span">Qiymət, AZN</span>
-        <svg class="icon  icon-arrow-down_b"><use xlink:href="symbol-defs.svg#icon-arrow-down"></use></svg>
         </label>
         
         <label class="filtr__label" for="">
@@ -182,7 +198,7 @@
         <div class="filter_buttons">
         
             <a class="filtr__btn" href="#"><svg class="icon icon_search"><use xlink:href="symbol-defs.svg#icon-search"></use></svg>Axtar</a>
-            <a class="filtr__btn1" href="#">Ətraflı axtar</a>
+            <a class="filtr__btn1" href="#">Ətraflı axtarış</a>
         
         </div>
     </div>
@@ -229,7 +245,7 @@
               <a href="#" class="board">
               <div class="home_picture_design">
               <img class="home_photo" src="img/thumb/ev1.jpg" alt="home_photo">
-                <div class="home_photo_text">56 000 AZN </div>
+                <div class="home_photo_text">56 000<span class="price__currency">AZN</span> </div>
                 <div class="home_photo_text_agent">agentlik</div>
                 <div class="content_type__icons">
              
@@ -265,7 +281,7 @@
               <a href="#" class="board">
               <div class="home_picture_design">
               <img class="home_photo" src="img/thumb/ev2.jpg" alt="home_photo">
-                <div class="home_photo_text">196 000 AZN </div>
+                <div class="home_photo_text">196 000<span class="price__currency">AZN</span></div>
          
                 <div class="content_type__icons">
              
@@ -300,7 +316,7 @@
               <a href="#" class="board">
               <div class="home_picture_design">
               <img class="home_photo" src="img/thumb/ev3.jpg" alt="home_photo">
-                <div class="home_photo_text">105 000 AZN </div>
+                <div class="home_photo_text">105 000<span class="price__currency">AZN</span> </div>
                 <div class="home_photo_text_agent">agentlik</div>
                 
                 <div class="content_type__icons">
@@ -337,7 +353,7 @@
               <div class="board">
               <div class="home_picture_design">
               <img class="home_photo" src="img/thumb/ev4.jpg" alt="ford-fusion">
-                <div class="home_photo_text">153 000 AZN </div>
+                <div class="home_photo_text">153 000<span class="price__currency">AZN</span></div>
                 
                 <svg class="heart__icon_content">
                             <use xlink:href="#heart"></use>
@@ -366,7 +382,7 @@
               <div class="board">
               <div class="home_picture_design">
               <img class="home_photo" src="img/thumb/ev5.jpg" alt="ford-fusion">
-                <div class="home_photo_text">153 000 AZN </div>
+                <div class="home_photo_text">153 000<span class="price__currency">AZN</span></div>
                 
                 <svg class="heart__icon_content">
                             <use xlink:href="#heart"></use>
@@ -741,7 +757,23 @@
           </div>
       </div>
   </div>
-  <!--  Main_elan_part_elan End -->            
+  <!--  Main_elan_part_elan End -->  
+  
+<!--   elan ver banner start                   -->
+<div class="avtovitrin_elan_ver">
+    <div class="_container">
+       <a class="avtovitrin_elan_ver_link" href="https://www.avtovitrin.com/number_check">
+        <div class="avtovitrin_elan_ver_item">
+           <div class="avtovitrin_elan_ver_item_main">
+            <div class="avtovitrin_elan_ver_item_title">Əmlakını Satmaq İstəyirsən?</div>
+            <div class="avtovitrin_elan_ver_item_text"><span>+ ELAN VER</span>
+            </div>
+            </div>
+        </div>
+        </a>
+    </div>
+</div>
+<!--   elan ver banner end                   -->
    
 <!-- Footer Section  Start -->
         <footer class="footer">
