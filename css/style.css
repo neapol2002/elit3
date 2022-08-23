@@ -950,7 +950,7 @@ body.lock {
 @media (max-width: 900px) {
    .filter_buttons {
       display: flex;
-/*      flex-direction: row-reverse;*/
+      flex-direction: row-reverse;
       
    }
    
@@ -1047,6 +1047,7 @@ input[type="number"]:focus {
    .filtr__section {
       margin: 105px auto 20px;
       max-width: 700px;
+      padding: 5px 0px;
    }
    
    .filtr__label {
@@ -2079,11 +2080,12 @@ margin-left: 2px;
 .agency__stats {
    display: flex;
    justify-content: flex-end;
-   background-color: #9aba95;
+/*   background-color: #9aba95;*/
    padding: 4px 15px;
    color: white;
    font-weight: 500;
    align-items: center;
+    background-color: #82af7b;
 }
 
 
@@ -2134,9 +2136,11 @@ margin-left: 2px;
 /* 404 page styles */
 
 .section__404 {
-   background-color: #9aba95;
+/*   background-color: #9aba95;*/
    color: white;
    padding: 80px 20px;
+   background-color: #82af7b;
+   margin-bottom: 40px;
    
 }
 
@@ -3321,7 +3325,8 @@ padding: 5px 10px;
     max-width: 400px;
     width: 95%;
 /*    background-color: #0098cb;*/
-   background-color: #9dce95;
+/*   background-color: #9dce95;*/
+    background-color: #82af7b;
 /*   background-color: #34a6bc;*/
     border-radius: 9px;
 }
@@ -3493,9 +3498,10 @@ padding: 5px 10px;
 }
 
 .contact_us {
-    background-color: #9dce95;
+/*    background-color: #9dce95;*/
     width: 100%;
     margin-bottom: 40px;
+    background-color: #82af7b;
 }
 
 .contact_us_parts {
@@ -3663,7 +3669,8 @@ font-size: 16px;
     max-width: 600px;
     width: 98%;
 /*    background-color: #0098cb;*/
-    background-color: #9dce95;
+/*    background-color: #9dce95;*/
+    background-color: #82af7b;
     border-radius: 9px;
 }
 
@@ -5178,6 +5185,75 @@ input:checked + .switcher_slider:before {
     color: orangered;
 }
 
+@media (max-width: 500px) {
+   .avtovitrin_elan_ver_item_title {
+      font-size: 28px;
+   }
+}
+
+/* Districts Section Styles */
+
+.districts {
+   margin-bottom: 20px;
+}
+.districts_container {
+}
+
+.districts__list {
+   display: flex;
+   padding: 0px 10px;
+   flex-wrap: wrap;
+}
+
+.district__name {
+   flex: 0 0 20%;
+   padding: 5px 5px;
+   display: flex;
+   align-items: center;
+}
+
+.district__name::before {
+   content: "";
+   width: 6px;
+   height: 6px;
+   color: gold;
+   background-color: gold;
+   display: block;
+   margin-right: 5px;
+   border-radius: 50%;
+}
+
+.district__link {
+   text-decoration: none;
+   color: #007caf;
+   color: #639000;
+   font-weight: 500;
+}
+
+.district__link span {
+   font-weight: 700;
+   padding-left: 3px;
+   color: #006088;
+   color: #669500;
+}
+
+@media (max-width: 700px) {
+   .district__name {
+   flex: 0 0 25%;
+   }
+}
+
+@media (max-width: 500px) {
+   .district__name {
+   flex: 0 0 33%;
+   }
+}
+
+@media (max-width: 400px) {
+   .district__name {
+   flex: 0 0 50%;
+   }
+}
 
 /*  Footer Styles */
 
