@@ -1720,6 +1720,7 @@ f
 
 .home__item {
     width: 25%;
+   position: relative;
 }
 
 @media (max-width: 991px) {
@@ -1909,6 +1910,22 @@ margin-left: 2px;
    border-radius: 5px;
 }
 
+.heart__icon_content1 {
+   display: block;
+    position: absolute;
+    fill: white;
+    width: 26px;
+    height: 26px;
+    left: 17px;
+    top: 17px;
+    padding: 4px 4px;
+    background-color: rgba(33, 33, 33, 0.37);
+   border-radius: 5px;
+   z-index: 3;
+   cursor: pointer;
+}
+
+
 .heart__icon_content_about {
     display: block;
 /*    fill: #ffffff;*/
@@ -1952,6 +1969,9 @@ margin-left: 2px;
     cursor: pointer;
 }
 
+.heart__icon_content1:hover {
+    fill: yellow;
+}
 
 
 .location_names {
@@ -2005,6 +2025,13 @@ margin-left: 2px;
     text-decoration: none;
     font-size: 12px;
     margin-bottom: 5px;
+}
+
+@media (max-width: 530px) {
+   .heart__icon_content1 {
+      left: 12px;
+    top: 12px;
+   }
 }
 
 /* Agencies Styles  */
