@@ -5269,6 +5269,24 @@ input:checked + .switcher_slider:before {
    border-radius: 50%;
 }
 
+.district__name1 {
+   flex: 0 0 20%;
+   padding: 5px 5px;
+   display: flex;
+   align-items: center;
+   
+}
+
+.district__name1::before {
+   content: "";
+   width: 6px;
+   height: 6px;
+   color: gold;
+   background-color: #c62cff;
+   display: block;
+   margin-right: 5px;
+   border-radius: 50%;
+}
 
 .district__link {
    text-decoration: none;
