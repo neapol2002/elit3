@@ -941,7 +941,20 @@ body.lock {
    margin: 2px 5px 2px;
    transition: all 0.3s ease 0s;
    text-align: center;
+   position: relative;
 }
+
+.filtr__btn1::after {
+   content: "";
+   width: 70%;
+   display: block;
+   position: absolute;
+   height: 1px;
+/*   background-color: white;*/
+   bottom: -4px;
+   border-bottom: 1px dotted white;
+}
+
 
 .filtr__btn1:hover {
    color: yellow;
@@ -966,6 +979,10 @@ body.lock {
       font-weight: 500;
    font-size: 16px;
 /*      width: 120px;*/
+   }
+   
+   .filtr__btn1::after {
+      display: none;
    }
 }
 
@@ -1045,7 +1062,7 @@ input[type="number"]:focus {
 
 @media (max-width: 900px){
    .filtr__section {
-      margin: 105px auto 20px;
+      margin: 105px auto 30px;
       max-width: 700px;
       padding: 5px 0px;
    }
@@ -1058,7 +1075,7 @@ input[type="number"]:focus {
 
 @media (max-width: 620px) {
    .filtr__section {
-      margin: 100px auto 20px;
+      margin: 105px auto 30px;
       max-width: 700px;
    }
    
@@ -5125,7 +5142,8 @@ input:checked + .switcher_slider:before {
     width: 90%;
     background-color: orangered;
    background-color: rgba(103, 120, 66, 0.87);
-    background-color: #354d00;
+/*    background-color: #354d00;*/
+    background-color: #5d8800;
     border-radius: 20px;
     padding: 10px;
     margin: 0 auto;
@@ -5210,6 +5228,7 @@ input:checked + .switcher_slider:before {
    padding: 5px 5px;
    display: flex;
    align-items: center;
+   
 }
 
 .district__name::before {
@@ -5223,19 +5242,27 @@ input:checked + .switcher_slider:before {
    border-radius: 50%;
 }
 
+
 .district__link {
    text-decoration: none;
-   color: #007caf;
    color: #639000;
    font-weight: 500;
+   transition: all 0.2s ease 0s;
+   
 }
 
 .district__link span {
    font-weight: 700;
    padding-left: 3px;
-   color: #006088;
    color: #669500;
 }
+
+.district__name:hover .district__link {
+   text-decoration: underline;
+   color: #85c100;
+   
+}
+
 
 @media (max-width: 700px) {
    .district__name {
