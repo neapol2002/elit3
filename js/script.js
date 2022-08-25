@@ -1,18 +1,3 @@
-// import AirDatepicker from 'js/air-datepicker';
-// import localeEn from 'js/en';
-
-let today = new Date().toISOString().substr(0, 10);
-document.querySelector(".cooming__date").value = today;
-
-
-new AirDatepicker('#date_in', {
-    // locale: localeEn
-    startDate: new Date(),
-    autoClose: true,
-    minDate: new Date(),
-    // language: 'en',
-    // isMobile: true,
-})
 
 // quantity script start 
 let quantityButtons = document.querySelectorAll('.quantity__button');
