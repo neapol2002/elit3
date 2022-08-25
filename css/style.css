@@ -2986,6 +2986,14 @@ margin-left: 2px;
 .estate__config_row {
    display: flex;
    flex-wrap: wrap;
+/*
+   max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0 20px;
+    will-change: max-height;
+    transition: all 0.3s ease-out;
+*/
 }
 
 .estate__config_column {
@@ -3032,10 +3040,22 @@ margin-left: 2px;
     flex-wrap: wrap;
     border-top: 1px solid #d1d1d1;
     border-bottom: 1px solid #d1d1d1;
-    margin: 20px 20px;
-    padding: 20px 0 5px;
+    margin: 0px 0px;
+    padding: 0px 0px 0px;
     font-size: 16px;
+   height: 0;
+    opacity: 0;
+    overflow: hidden;
+    will-change: max-height;
+    transition: all 0.4s ease-out;
 
+}
+
+.ads_report_items.open {
+   opacity: 1;
+   height: 90px;
+   margin: 20px 20px;
+   padding: 20px 0 5px;
 }
 
 .ads_report_item {
@@ -3055,13 +3075,23 @@ margin-left: 2px;
 }
 
 .ads_delate_items {
-/*    display: none;*/
-/*    border-top: 1px solid #d1d1d1;*/
     border-bottom: 1px solid #d1d1d1;
-    margin: 20px 10px 0;
-/*    padding: 20px 0 5px;*/
+    margin: 0px 0px 0px;
     font-size: 16px;
+   height: 0;
+    opacity: 0;
+    overflow: hidden;
+    will-change: max-height;
+    transition: all 0.4s ease-out;
 }
+
+.ads_delate_items.open {
+   margin: 20px 10px 0;
+   height: 180px;
+    opacity: 1;
+}
+
+
 
 .ads_delate_title {
     text-align: center;
@@ -3119,11 +3149,20 @@ margin-left: 2px;
 }
 
 .ads_edit_items {
-/*    border-top: 1px solid #d1d1d1;*/
     border-bottom: 1px solid #d1d1d1;
-    margin: 20px 10px 0;
-/*    padding: 20px 0 5px;*/
+    margin: 0px 0px 0px;
     font-size: 16px;
+   height: 0;
+    opacity: 0;
+    overflow: hidden;
+    will-change: max-height;
+    transition: all 0.4s ease-out;
+}
+
+.ads_edit_items.open {
+   margin: 20px 10px 0;
+   height: 180px;
+    opacity: 1;
 }
 
 .car_about_share {
@@ -3228,7 +3267,18 @@ margin-left: 2px;
 /* Share styles estate */
 
 .estate__share {
-   margin: 20px 0px;
+   margin: 0px 0px;
+   height: 0;
+    opacity: 0;
+    overflow: hidden;
+    will-change: max-height;
+    transition: all 0.4s ease-out;
+}
+
+.estate__share.open {
+   margin: 20px 0px 10px;
+   height: 30px;
+    opacity: 1;
 }
 
 .estate__share_row {
