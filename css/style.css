@@ -3054,7 +3054,7 @@ margin-left: 2px;
 .ads_report_items.open {
    opacity: 1;
    height: 90px;
-   margin: 20px 20px;
+   margin: 20px 10px;
    padding: 20px 0 5px;
 }
 
@@ -3071,6 +3071,10 @@ margin-left: 2px;
 @media (max-width: 520px) {
    .ads_report_item {
       width: 50%;
+   }
+   
+   .ads_report_items.open {
+      height: 120px;
    }
 }
 
@@ -3091,6 +3095,17 @@ margin-left: 2px;
     opacity: 1;
 }
 
+@media (max-width: 780px) {
+   .ads_delate_items.open {
+      height: 210px;
+   }
+}
+
+@media (max-width: 420px) {
+   .ads_delate_items.open {
+      height: 230px;
+   }
+}
 
 
 .ads_delate_title {
@@ -3148,6 +3163,13 @@ margin-left: 2px;
     color: #00b5ff;
 }
 
+@media (max-width: 380px) {
+   .ads_delate_btn {
+      font-size: 12px;
+      padding: 10px 5px;
+   }
+}
+
 .ads_edit_items {
     border-bottom: 1px solid #d1d1d1;
     margin: 0px 0px 0px;
@@ -3163,6 +3185,26 @@ margin-left: 2px;
    margin: 20px 10px 0;
    height: 180px;
     opacity: 1;
+}
+
+
+@media (max-width: 700px) {
+   .ads_edit_items.open {
+      height: 200px;
+   }
+}
+
+@media (max-width: 450px) {
+   .ads_edit_items.open {
+      height: 210px;
+   }
+}
+
+@media (max-width: 400px) {
+   .ads_edit_items.open {
+      height: 225px;
+      margin: 20px 5px 0;
+   }
 }
 
 .car_about_share {
