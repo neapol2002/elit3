@@ -887,8 +887,9 @@ body.lock {
     cursor: text;
     transition: all 0.2s;
     z-index: 1;
-     color: #a2a2a2;
-   font-size: 11px;
+/*     color: #a2a2a2;*/
+     color: #777777;
+   font-size: 12px;
 }
 
 .icon-arrow-down_b {
@@ -1037,6 +1038,7 @@ body.lock {
    border: 1px dotted #b5b5b5;
    border-radius: 5px;
    padding: 0px 5px;
+   font-size: 16px;
 }
 
 .realty_price__min {
@@ -1102,7 +1104,7 @@ input[type="number"]:focus {
    
    .input_price_end {
       padding: 0px 5px;
-      font-size: 12px;
+/*      font-size: 12px;*/
    }
 }
 
