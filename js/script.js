@@ -26,3 +26,18 @@ const myModal = new HystModal({
     linkAttributeName: "data-hystmodal",
     // настройки (не обязательно), см. API
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+
+  const elements = document.querySelectorAll('[data-mask="price_input"]') // ищем все поля с атрибутом data-mask="phone"
+  if (!elements) return // если таких нет, прекращаем выполнение функции
+  const priceOptions = { // создаем объект параметров
+    mask: Number,
+    thousandsSeparator: ' '
+  }
+  elements.forEach(el => { // для каждого найденного поля с атрибутом [data-mask="phone"]
+    IMask(el, priceOptions) // инициализируем плагин с установленными выше параметрами
+  })
+
+})
