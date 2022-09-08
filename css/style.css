@@ -5731,7 +5731,7 @@ input:checked + .switcher_slider:before {
 
 .elanlar__status_item {
    padding: 7px 15px;
-   background-color: gold;
+   background-color: #efc900;
    color: white;
    font-size: 16px;
    font-weight: 700;
