@@ -6093,6 +6093,207 @@ input:checked + .switcher_slider:before {
    }
 }
 
+/* User stat dashboard */
+
+
+
+.user_wallet {
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    }
+
+.user_wallet_part {
+    width: 29%;
+    border: 1px solid #c3c3c3;
+    border-radius: 7px;
+    margin: 10px;
+    }
+
+.user_wallet_part_title {
+    width: 90%;
+    margin: 10px auto;
+    padding: 7px;
+    border-bottom: 1px dotted #c3c3c3;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.user_wallet_part_digits {
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.digits_money {
+    width: 49%;
+    margin: 10px auto;
+
+}
+
+.digits_money_border {
+    border-right: 1px dotted #c3c3c3;
+    margin-bottom: 10px;
+}
+
+.digits_money_d {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.digits_money_d span {
+    font-size: 14px;
+}
+
+.digits_money_c a {
+    text-decoration: none;
+    background-color: #0096c7;
+    padding: 5px;
+    border-radius: 7px;
+    color: white;
+    border: 1px solid #007196;
+}
+
+.digits_money_c a:hover {
+    background-color: #007196;
+}
+
+.user_balance_rise {
+    width: 87%;
+    margin: 15px auto;
+    border: 1px solid #cecece;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.user_balance_rise_title {
+/*    width: 90%;*/
+    margin: 10px auto;
+    padding: 7px;
+    border-bottom: 1px dotted #c3c3c3;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.user_balance_rise_part {
+    display: flex;
+    margin: 20px 10px;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.user_balance_rise_subtitle {
+    margin: 5px 0px;
+}
+.user_balance_rise_volume {
+/*    margin: 5px;*/
+
+}
+.user_balance_rise_volume span {
+    margin: 0 5px;
+    padding: 10px 7px;
+/*    border: 1px dotted #0062ff;*/
+    background-color: #0096c7;
+    color: white;
+   cursor: pointer;
+   transition: all 0.3s ease 0s;
+}
+
+.user_balance_rise_volume span:hover {
+   background-color: #007196;
+}
+
+
+.user_balance_rise_input {
+    margin: 0px 4px;
+    padding: 10px 7px;
+    border: 1px dotted #0096c7;
+    width: 100px;
+    outline: none;
+}
+
+.user_balance_rise_input:active {
+   border: 1px dotted #006a8d;
+}
+
+.user_balance_rise_input:focus {
+   border: 1px solid #006a8d;
+}
+
+
+
+.user_balance_rise_form {
+    margin: 5px 10px;
+    display: flex;
+    align-items: center;
+    color: #0096c7;
+    font-weight: 700;
+/*    align-content: center;*/
+}
+
+.user_balance_rise_form_in {
+    margin: 0 10px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+   cursor: pointer;
+}
+.user_balance_rise_form input {
+    margin: 5px 2px;
+}
+
+.user_balance_rise_form_in label,
+.user_balance_rise_form_in input {
+   cursor: pointer;
+}
+
+.user_balance_rise_btn {
+/*display: inline-block;*/
+    width: 200px;
+    margin: 5px auto;
+    padding: 12px 35px;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    color: #6c6c6c;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #ffce00;
+    transition: background .2s linear;
+}
+
+.user_balance_rise_btn:hover {
+   background-color: #f4c500;
+}
+
+@media (max-width: 767px) {
+    .user_wallet_part {
+        width: 45%;
+    }
+}
+
+@media (max-width: 475px) {
+   .dashboard_alt_items {
+        width: 99%;
+    }
+
+    .dashboard_alt_item {
+        font-size: 12px;
+    }
+
+    .user_wallet_part {
+        width: 90%;
+    }
+}
 
 
 /*  Footer Styles */
