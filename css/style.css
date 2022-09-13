@@ -5664,6 +5664,7 @@ input:checked + .switcher_slider:before {
 
 .user__elanlar_column {
   padding: 10px;
+   margin-bottom: 20px;
 }
 
 .user__elanlar_body {
@@ -5899,6 +5900,200 @@ input:checked + .switcher_slider:before {
       width: 100%;
    }
 }
+
+
+/* Estate user edit*/
+
+.elan_dashboard {
+    margin: 20px 0px;
+}
+
+.user_profile_info {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid #cecece;
+    border-radius: 10px;
+    padding: 20px;
+}
+.user_profile_info_title {
+    font-weight: 700;
+    font-size: 16px;
+    color: #3d6ecc;
+    border-bottom: 2px solid #cecece;
+    width: 200px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+
+}
+
+.user_profile_info_alt {
+    display: flex;
+    border-bottom: 1px dotted #cecece;
+    max-width: 400px;
+    width: 100%;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+
+}
+
+.user_profile_info_alt_title {
+    padding: 5px;
+    width: 30%;
+    align-content: center;
+    align-items: center;
+    font-weight: 700;
+}
+
+.user_profile_info_alt_name {
+    padding: 5px;
+    width: 40%;
+    align-content: center;
+    align-items: center;
+}
+
+.user_profile_info_alt_input {
+/*    margin: 10px 10px 10px 10px;*/
+    width: 40%;
+    border: 0px solid #9d9d9d;
+/*    width: 230px;*/
+    font-family: 'Roboto', sans-serif;
+/*    font-size: 18px;*/
+    color: #777;
+    font-size: 14px;
+/*    padding: 5px 0px;*/
+    padding: 9px 3px 9px 3px;
+    background-color: white;
+    outline:none;
+    -moz-appearance: none;
+}
+
+
+.user_profile_edit_icon {
+    font-family: 'Roboto', sans-serif;
+    margin: 3px 3px;
+    padding: 2px 5px;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    width: 30%;
+    border-radius: 7px;
+    background-color: #006ecc;
+    text-align: center;
+    outline: none;
+    border: 1px solid #018aff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+}
+
+.edit_icon-orange {
+   background-color: orangered;
+   border: 1px solid orangered;
+/*   max-width: 200px;*/
+   width: 40%;
+}
+
+.user_profile_edit_icon:hover {
+   background-color: #007de8;
+   color: #eaeaea;
+}
+
+.edit_icon-orange:hover {
+   color: yellow;
+   background-color: orangered;
+}
+
+.user_profile_edit_icon_svg {
+    fill: white;
+    stroke-width: 5px;
+    width: 20px;
+    height: 15px;
+    vertical-align: middle;
+}
+
+.user_profile_edit_icon:focus {
+    background-color: #006fce;
+    outline: none;
+    border: 1px solid #018aff;
+}
+
+.user_profile_edit_icon:active {
+    background-color: #006fce;
+    outline: none;
+    border: 1px solid #ffd800;
+    color: #fff500;
+}
+
+.edit_icon-orange:active {
+   background-color: #eb4000;
+    outline: none;
+    border: 1px solid orangered;
+    color: #fff500;
+}
+
+.user_profile_edit_icon_svg:active {
+    fill: #fff500;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.user_password_change {
+/*    display: none;*/
+   height: 0;
+    opacity: 0;
+    overflow: hidden;
+    will-change: max-height;
+    transition: all 0.4s ease-out;
+}
+
+.ads_report_items1 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-top: 1px solid #d1d1d1;
+    border-bottom: 1px solid #d1d1d1;
+    margin: 0px 0px;
+    padding: 0px 0px 0px;
+    font-size: 16px;
+   height: 0;
+    opacity: 0;
+    overflow: hidden;
+    will-change: max-height;
+    transition: all 0.4s ease-out;
+
+}
+
+.user_password_change.open {
+   opacity: 1;
+   height: 160px;
+/*   margin: 20px 10px;*/
+/*   padding: 20px 0 5px;*/
+}
+
+@media (max-width: 600px) {
+   .user_profile_info {
+      width: 98%;
+   }
+}
+
+@media (max-width: 400px) {
+   .user_profile_edit_icon {
+      font-size: 12px;
+      font-weight: 300;
+   }
+   
+   .user_profile_info {
+      padding: 5px;
+   }
+}
+
+
 
 /*  Footer Styles */
 
