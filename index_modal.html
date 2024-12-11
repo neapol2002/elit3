@@ -16,6 +16,7 @@
 </head>
 <body>
    <div class="wrapper">
+    
 <!--   Header Section Start -->
 <div class="header">
    <div class="header-top">
@@ -26,13 +27,8 @@
                <div class="top-right__location">
                <svg class="icon icon-location"><use xlink:href="symbol-defs.svg#icon-location"></use></svg>
                <a href="#" class="right__location-country">Azərbaycan</a>
-<!--               <a class="right__location-city" href="#">Bakı</a>-->
                </div>
-<!--
-               <a href="#" class="top-right__weather">
-               <svg class="icon icon-sun1"><use xlink:href="symbol-defs.svg#icon-sun1"></use></svg>
-               <span>+23 °C</span></a>
--->
+
             </div>
             <div class="header-top__left top-left">
                <div data-da=".nav, 800, 2" class="top-left__contacts">
@@ -132,10 +128,11 @@
     <div class="realty-filtr__inner">
         <div class="filtr-inner">
         
-      <label class="filtr__label" for="">
-        <select class="filtr__input" name="" id="" placeholder="Əmlak növü">
-           <option class="filtr_select__list"  selected>Yeni tikili</option>
-           <option class="filtr_select__list">Köhnə tikili</option>
+      <label class="filtr__label" >
+        <select class="filtr__input" name="" placeholder="Əmlak növü">
+          <option class="filtr_select__list"  selected>Mənzil</option>
+           <option class="filtr_select__list"> -- Yeni tikili</option>
+           <option class="filtr_select__list"> -- Köhnə tikili</option>
            <option class="filtr_select__list">Ev / Villa</option>
            <option class="filtr_select__list">Bağ</option>
            <option class="filtr_select__list">Ofis</option>
@@ -144,8 +141,8 @@
         <svg class="icon  icon-arrow-down_b"><use xlink:href="symbol-defs.svg#icon-arrow-down"></use></svg>
         </label>
         
-         <label class="filtr__label" for="">
-        <select class="filtr__input" name="" id="" placeholder="Otaq sayı">
+         <label class="filtr__label" >
+        <select class="filtr__input" name="" placeholder="Otaq sayı">
            <option class="filtr_select__list"  selected>İstənilən otaq sayı</option>
            <option class="filtr_select__list">1 otaq</option>
            <option class="filtr_select__list">2 otaq</option>
@@ -172,18 +169,18 @@
         <!--         Sahe m kvadrat end      -->
         
         
-        <label class="filtr__label" for="">
-        <div class="filtr__input1" name="" id="" placeholder="Qiymət">
+        <div class="filtr__label" >
+        <div class="filtr__input1" name="" placeholder="Qiymət">
           <div class="filtr_realty__price1">
           <input class="input_price_end" type="tel" name="max_price" data-mask="price_input" placeholder="min" id="pto" >
-          <input class="input_price_end" type="tel" name="max_price" data-mask="price_input" placeholder="maks" id="pto">
+          <input class="input_price_end" type="tel" name="max_price" data-mask="price_input" placeholder="maks" id="pto1">
            </div>
         </div>
         <span class="booking__span filtr__span">Qiymət, AZN</span>
-        </label>
+        </div>
         
-        <label class="filtr__label" for="">
-        <select class="filtr__input" name="" id="" placeholder="Şəhər">
+        <label class="filtr__label" >
+        <select class="filtr__input" name=""  placeholder="Şəhər">
            <option class="filtr_select__list"  selected>Bakı</option>
            <option class="filtr_select__list">Sumqayıt</option>
            <option class="filtr_select__list">Ucar</option>
@@ -232,10 +229,11 @@
     <div class="realty-filtr__inner_modal">
         <div class="filtr-inner__modal">
         
-      <label class="filtr__label_modal" for="">
-        <select class="filtr__input" name="" id="" placeholder="Əmlak növü">
-           <option class="filtr_select__list"  selected>Yeni tikili</option>
-           <option class="filtr_select__list">Köhnə tikili</option>
+      <label class="filtr__label_modal" >
+        <select class="filtr__input" name="" placeholder="Əmlak növü">
+           <option class="filtr_select__list"  selected>Mənzil</option>
+           <option class="filtr_select__list"> -- Yeni tikili</option>
+           <option class="filtr_select__list"> -- Köhnə tikili</option>
            <option class="filtr_select__list">Ev / Villa</option>
            <option class="filtr_select__list">Bağ</option>
            <option class="filtr_select__list">Ofis</option>
@@ -244,8 +242,8 @@
         <svg class="icon  icon-arrow-down_b"><use xlink:href="symbol-defs.svg#icon-arrow-down"></use></svg>
         </label>
         
-         <label class="filtr__label_modal" for="">
-        <select class="filtr__input" name="" id="" placeholder="Otaq sayı">
+         <label class="filtr__label_modal" >
+        <select class="filtr__input" name="" placeholder="Otaq sayı">
            <option class="filtr_select__list"  selected>İstənilən otaq sayı</option>
            <option class="filtr_select__list">1 otaq</option>
            <option class="filtr_select__list">2 otaq</option>
@@ -260,44 +258,44 @@
 
         
         
-        <label class="filtr__label_modal" for="">
-        <div class="filtr__input1" name="" id="" placeholder="Qiymət">
+        <div class="filtr__label_modal" for="">
+        <div class="filtr__input1" name="" placeholder="Qiymət">
           <div class="filtr_realty__price1">
-          <input class="input_price_end" type="number" name="max_price" placeholder="min" id="pto">
-          <input class="input_price_end" type="number" name="max_price" placeholder="maks" id="pto">
+          <input class="input_price_end" type="number" name="max_price" placeholder="min" id="pto2">
+          <input class="input_price_end" type="number" name="max_price" placeholder="maks" id="pto3">
            </div>
         </div>
         <span class="booking__span filtr__span">Qiymət, AZN</span>
-        </label>
+        </div>
         
         <!--         Sahe m kvadrat start      -->
-                <label class="filtr__label_modal" for="">
-        <div class="filtr__input1" name="" id="" placeholder="Qiymət">
+                <div class="filtr__label_modal" >
+        <div class="filtr__input1" name=""  placeholder="Qiymət">
           <div class="filtr_realty__price1">
-          <input class="input_price_end" type="number" name="max_price" placeholder="min" id="pto">
-          <input class="input_price_end" type="number" name="max_price" placeholder="maks" id="pto">
+          <input class="input_price_end" type="number" name="max_price" placeholder="min" id="pto5">
+          <input class="input_price_end" type="number" name="max_price" placeholder="maks" id="pto6">
            </div>
         </div>
         <span class="booking__span filtr__span">Sahə, m²</span>
-        </label>
+        </div>
         <!--         Sahe m kvadrat end      -->
         
         <!--         Mertebe start      -->
-                <label class="filtr__label_modal" for="">
-        <div class="filtr__input1" name="" id="" placeholder="Mərtəbə">
+                <div class="filtr__label_modal" >
+        <div class="filtr__input1" name=""  placeholder="Mərtəbə">
           <div class="filtr_realty__price1">
-          <input class="input_price_end" type="number" name="max_price" placeholder="min" id="pto">
-          <input class="input_price_end" type="number" name="max_price" placeholder="maks" id="pto">
+          <input class="input_price_end" type="number" name="max_price" placeholder="min" id="pto8">
+          <input class="input_price_end" type="number" name="max_price" placeholder="maks" id="pto9">
            </div>
         </div>
         <span class="booking__span filtr__span">Mərtəbə</span>
-        </label>
+        </div>
         <!--         Mertebe end      -->
         
         
         
-            <label class="filtr__label_modal" for="">
-        <select class="filtr__input" name="" id="" placeholder="Təmiri">
+            <label class="filtr__label_modal" >
+        <select class="filtr__input" name="" placeholder="Təmiri">
            <option class="filtr_select__list"  selected>Seçilməyib</option>
            <option class="filtr_select__list">Sumqayıt</option>
            <option class="filtr_select__list">Ucar</option>
@@ -308,27 +306,27 @@
         <svg class="icon  icon-arrow-down_b"><use xlink:href="symbol-defs.svg#icon-arrow-down"></use></svg>
         </label>
         
-        <label class="filtr__label_modal1" for="">
+        <div class="filtr__label_modal1" >
         <input class="modal_item_checkbox" type="checkbox" id="first_floor">
          <label for="first_floor" class="modal_item_label">1-ci olmasın</label>
          <input class="modal_item_checkbox" type="checkbox" id="last_floor">
          <label for="last_floor" class="modal_item_label">Ən üst olmasın</label>
          
         <span class="booking__span filtr__span">Mərtəbə seçimi</span>
-        </label>
+        </div>
         
-             <label class="filtr__label_modal1" for="">
+             <div class="filtr__label_modal1">
         <input class="modal_item_checkbox" type="checkbox" id="with_doc">
          <label for="with_doc" class="modal_item_label">Çıxarış var</label>
          <input class="modal_item_checkbox" type="checkbox" id="with_ipoteka">
          <label for="with_ipoteka" class="modal_item_label">İpoteka var</label>
          
         <span class="booking__span filtr__span">Sənəd və ipoteka</span>
-        </label>
+        </div>
         
         
-            <label class="filtr__label_modal" for="">
-        <select class="filtr__input" name="" id="" placeholder="Şəhər">
+            <label class="filtr__label_modal" >
+        <select class="filtr__input" name="" placeholder="Şəhər">
            <option class="filtr_select__list"  selected>Bakı</option>
            <option class="filtr_select__list">Sumqayıt</option>
            <option class="filtr_select__list">Ucar</option>
@@ -339,8 +337,8 @@
         <svg class="icon  icon-arrow-down_b"><use xlink:href="symbol-defs.svg#icon-arrow-down"></use></svg>
         </label>
         
-               <label class="filtr__label_modal" for="">
-        <select class="filtr__input" name="" id="" placeholder="Rayon">
+               <label class="filtr__label_modal">
+        <select class="filtr__input" name="" placeholder="Rayon">
            <option class="filtr_select__list" selected>Seçilməyib</option>
            <option class="filtr_select__list">Sumqayıt</option>
            <option class="filtr_select__list">Ucar</option>
@@ -351,8 +349,8 @@
         <svg class="icon  icon-arrow-down_b"><use xlink:href="symbol-defs.svg#icon-arrow-down"></use></svg>
         </label>
         
-               <label class="filtr__label_modal" for="">
-        <select class="filtr__input" name="" id="" placeholder="Qəsəbə">
+               <label class="filtr__label_modal">
+        <select class="filtr__input" name="" placeholder="Qəsəbə">
            <option class="filtr_select__list"  selected>Seçilməyib</option>
            <option class="filtr_select__list">Sumqayıt</option>
            <option class="filtr_select__list">Ucar</option>
@@ -363,8 +361,8 @@
         <svg class="icon  icon-arrow-down_b"><use xlink:href="symbol-defs.svg#icon-arrow-down"></use></svg>
         </label>
         
-               <label class="filtr__label_modal" for="">
-        <select class="filtr__input" name="" id="" placeholder="Nişangahlar">
+               <label class="filtr__label_modal">
+        <select class="filtr__input" name="" placeholder="Nişangahlar">
            <option class="filtr_select__list"  selected>Seçilməyib</option>
            <option class="filtr_select__list">Sumqayıt</option>
            <option class="filtr_select__list">Ucar</option>
@@ -375,8 +373,8 @@
         <svg class="icon  icon-arrow-down_b"><use xlink:href="symbol-defs.svg#icon-arrow-down"></use></svg>
         </label>
         
-        <label class="filtr__label_modal" for="">
-        <select class="filtr__input" name="" id="" placeholder="Metro">
+        <label class="filtr__label_modal">
+        <select class="filtr__input" name="" placeholder="Metro">
            <option class="filtr_select__list"  selected>Seçilməyib</option>
            <option class="filtr_select__list">Sumqayıt</option>
            <option class="filtr_select__list">Ucar</option>
@@ -388,20 +386,17 @@
         </label>
         
         <!--         Sahe m kvadrat start      -->
-                <label class="filtr__label_modal" for="">
-        <div class="filtr__input1" name="" id="" placeholder="Elanın kodu">
+                <div class="filtr__label_modal">
+        <div class="filtr__input1" name="" placeholder="Elanın kodu">
           <div class="filtr_realty__price1">
-          <input class="input_estate_code" type="number" name="max_price" placeholder="" id="pto">
+          <input class="input_estate_code" type="number" name="max_price" placeholder="" id="pto11">
    
            </div>
         </div>
         <span class="booking__span filtr__span">Elanın nömrəsi</span>
-        </label>
+        </div>
         <!--         Sahe m kvadrat end      -->
         
-    
-        
-     
    
         
         <div class="modal_filter_buttons">
@@ -1179,8 +1174,6 @@
     
     <script src="js/dynamicAdapt.js"></script>
     <script src="js/bs.js"></script>
-    <script src="js/air-datepicker.js"></script>
-<!--    <script src="js/en.js"></script>-->
    <script src="js/hystmodal.min.js"></script>
    <script src="js/imask.js"></script>
     <script src="js/script.js"></script>
